@@ -1,0 +1,139 @@
+:root {
+    --textColor: #000000;
+    --color1: #FFFFFF;
+    --color2: #FFDD00;
+    --color3: #FFF27C;
+    --color4: #D0D0D0;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color1);
+    color: var(--textColor);
+    text-align: center;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: var(--color2);
+    padding: 4px:
+}
+
+nav {
+    width: 100%;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    align-content: space-between;
+    float: right;
+    background-color: var(--color2);
+}
+
+.navItem {
+    width: 15%;
+    background-color: var(--color1);
+    margin: 4px;
+    border-radius: 5px;
+}
+
+a:link {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+li > a {
+    display: block;
+    text-align: center;
+    padding: 16%;
+}
+
+#logo {
+    width: 10%;
+}
+
+#flexContainer {
+    width: 100%;
+}
+
+#casserole {
+    width: 80%;
+}
+
+#description {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 4px;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    #logo {
+        width: 20%;
+    }
+
+    nav > ul {
+        width: 80%;
+    }
+
+    #recipe {
+        width: 100%;
+    }
+
+    #ingredients {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 641px) {
+    #logo {
+        width: 15%;
+    }
+
+    nav > ul {
+        width: 85%;
+    }
+
+    #recipe {
+        width: 100%;
+    }
+
+    #ingredients {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 960px) {
+    body {
+        width: 80vw;
+    }
+
+    #recipe {
+        width: 60%;
+        float: right;
+    }
+
+    #ingredients {
+        width: 40%;
+        float: left;
+    }
+}
